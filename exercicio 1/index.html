@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+    <!-- CDN do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <div
+        class="bg-zinc-950 min-h-screen flex items-center justify-center p-4 text-white font-sans"
+      >
+        <div
+          class="border-2 border-zinc-400 rounded-3xl p-8 max-w-2xl w-full bg-zinc-900"
+        >
+          <h1 class="text-3xl text-center mb-4">Cálculo de Horas Extras</h1>
+          <p class="text-zinc-400 text-sm mb-8 text-center">
+            Para efetuar o cálculo de horas extras, insira as informações abaixo
+            e clique em calcular.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <div>
+                <label class="block mb-1">Salário Bruto</label>
+                <input
+                  type="number"
+                  id="salario"
+                  placeholder="Ex: 3000"
+                  class="w-full bg-transparent border-2 border-zinc-500 rounded-xl p-2 outline-none focus:border-white transition"
+                />
+              </div>
+
+              <div>
+                <label class="block mb-1">Horas extras (dias normais)</label>
+                <input
+                  type="number"
+                  id="horas50"
+                  placeholder="Qtd de horas"
+                  class="w-full bg-transparent border-2 border-zinc-500 rounded-xl p-2 outline-none focus:border-white transition"
+                />
+              </div>
+
+              <div>
+                <label class="block mb-1"
+                  >Horas extras (finais de semana)</label
+                >
+                <input
+                  type="number"
+                  id="horas100"
+                  placeholder="Qtd de horas"
+                  class="w-full bg-transparent border-2 border-zinc-500 rounded-xl p-2 outline-none focus:border-white transition"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <label class="block mb-1">Resultado</label>
+              <div
+                id="resultado"
+                class="flex-grow border-2 border-zinc-500 rounded-3xl p-4 min-h-[150px] bg-zinc-800/50 flex items-center justify-center text-xl font-bold text-green-400"
+              >
+                R$ 0,00
+              </div>
+
+              <button
+                onclick="calcular()"
+                class="mt-4 bg-green-900 hover:bg-green-800 border-2 border-green-500 text-white font-bold py-3 px-6 rounded-xl transition shadow-lg"
+              >
+                Calcular
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

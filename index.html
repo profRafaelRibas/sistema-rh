@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Empresarial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+    <div class="bg-zinc-950 min-h-screen flex items-center justify-center p-4 text-white font-sans">
+  
+  <div class="border-2 border-zinc-400 rounded-3xl p-10 max-w-4xl w-full bg-zinc-900 shadow-2xl">
+    
+    <header class="text-center mb-10">
+      <h1 class="text-4xl font-light mb-2">Sistema Empresarial</h1>
+      <p class="text-zinc-400 italic">Simplificando a vida de sua empresa!</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <nav class="flex flex-col gap-4">
+        <a href="exercicio/index.html" 
+           onmouseover="alterarImagem('https://via.placeholder.com/300/166534/FFFFFF?text=Hora+Extra')" 
+           onmouseout="resetarImagem()"
+           class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all">
+          Cálculo de Hora Extra
+        </a>
+
+        <button onmouseover="alterarImagem('https://via.placeholder.com/300/1e293b/FFFFFF?text=Modulo+2')" 
+                onmouseout="resetarImagem()"
+                class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all opacity-80">
+          Cálculo de ...
+        </button>
+
+        <button onmouseover="alterarImagem('https://via.placeholder.com/300/1e293b/FFFFFF?text=Modulo+3')" 
+                onmouseout="resetarImagem()"
+                class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all opacity-80">
+          Cálculo de ...
+        </button>
+      </nav>
+
+      <div class="border-2 border-zinc-500 rounded-3xl h-64 flex items-center justify-center overflow-hidden bg-zinc-800">
+        <img id="imgDinamica" src="https://via.placeholder.com/300/3f3f46/FFFFFF?text=Sistema" 
+             alt="Preview" class="w-full h-full object-cover transition-opacity duration-300">
+      </div>
+    </div>
+
+    <footer class="mt-12 pt-6 border-t border-zinc-700 flex items-center justify-center gap-2 text-zinc-300">
+      <div class="flex items-center gap-2">
+        <span>📅</span>
+        <span id="dataAtual">Carregando data...</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span>🕒</span>
+        <span id="horaAtual" class="font-mono text-xl">00:00:00</span>
+      </div>
+    </footer>
+
+  </div>
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
