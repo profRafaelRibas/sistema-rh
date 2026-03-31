@@ -35,17 +35,3 @@ setInterval(atualizarRelogio, 1000);
 
 // Executa uma vez ao carregar para não esperar 1 segundo
 atualizarRelogio();
-
-
-// --- Lógica da Imagem no Hover ---
-
-const imgElemento = document.getElementById('imgDinamica');
-const imgPadrao = "https://via.placeholder.com/300/3f3f46/FFFFFF?text=Sistema";
-
-function alterarImagem(url) {
-  imgElemento.src = url;
-}
-
-function resetarImagem() {
-  imgElemento.src = imgPadrao;
-}

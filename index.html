@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,29 +20,31 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       
       <nav class="flex flex-col gap-4">
-        <a href="exercicio/index.html" 
-           onmouseover="alterarImagem('https://via.placeholder.com/300/166534/FFFFFF?text=Hora+Extra')" 
-           onmouseout="resetarImagem()"
+        <a href="exercicio 1/index.html" 
+           onmouseover="alterarImagem('overtime')" 
+           onmouseout="alterarImagem('home')"
            class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all">
           Cálculo de Hora Extra
         </a>
 
-        <button onmouseover="alterarImagem('https://via.placeholder.com/300/1e293b/FFFFFF?text=Modulo+2')" 
-                onmouseout="resetarImagem()"
-                class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all opacity-80">
-          Cálculo de ...
-        </button>
+        <a href="exercicio 2/index.html" 
+           onmouseover="alterarImagem('salary')" 
+           onmouseout="alterarImagem('home')"
+           class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all">
+          Cálculo de Salário
+        </a>
 
-        <button onmouseover="alterarImagem('https://via.placeholder.com/300/1e293b/FFFFFF?text=Modulo+3')" 
-                onmouseout="resetarImagem()"
-                class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all opacity-80">
-          Cálculo de ...
-        </button>
+        <a href="exercicio 3/index.html" 
+           onmouseover="alterarImagem('bus')" 
+           onmouseout="alterarImagem('home')"
+           class="bg-green-900/50 hover:bg-green-800 border-2 border-green-600 p-4 rounded-2xl text-center text-xl transition-all">
+          Cálculo de Transporte
+        </a>
       </nav>
 
       <div class="border-2 border-zinc-500 rounded-3xl h-64 flex items-center justify-center overflow-hidden bg-zinc-800">
-        <img id="imgDinamica" src="https://via.placeholder.com/300/3f3f46/FFFFFF?text=Sistema" 
-             alt="Preview" class="w-full h-full object-cover transition-opacity duration-300">
+        <img id="imgDinamica" src="img/home.png" 
+             alt="Preview" class="w-full h-full object-contain transition-opacity duration-300">
       </div>
     </div>
 
@@ -60,6 +62,7 @@
   </div>
 </div>
     </main>
-    <script src="script.js"></script>
+    <script src="alteraimagem.js"></script>
+    <script src="datahora.js"></script>
 </body>
 </html>

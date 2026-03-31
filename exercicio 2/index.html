@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercício 1</title>
+    <title>Exercício 2</title>
     <!-- CDN do Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -17,46 +17,26 @@
         >
           <div class="flex items-start justify-center mb-4 space-x-6">
             <a href="../index.html"><span class="text-3xl">⬅️</span></a>
-            <h1 class="text-3xl text-center mb-4">Cálculo de Horas Extras</h1>
+            <h1 class="text-3xl text-center mb-4">Cálculo de Aumento Salarial</h1>
           </div>
           <p class="text-zinc-400 text-sm mb-8 text-center">
-            Para efetuar o cálculo de horas extras, insira as informações abaixo
-            e clique em calcular.
+            Para efetuar o cálculo de aumento salarial, insira as informações
+            abaixo e clique em calcular.
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="space-y-4">
               <div>
-                <label class="block mb-1">Salário Bruto</label>
+                <label class="block mb-1">Salário Atual</label>
                 <input
                   type="number"
-                  id="salario"
+                  id="salarioAtual"
                   placeholder="Ex: 3000"
                   class="w-full bg-transparent border-2 border-zinc-500 rounded-xl p-2 outline-none focus:border-white transition"
                 />
               </div>
 
-              <div>
-                <label class="block mb-1">Horas extras (dias normais)</label>
-                <input
-                  type="number"
-                  id="horas50"
-                  placeholder="Qtd de horas"
-                  class="w-full bg-transparent border-2 border-zinc-500 rounded-xl p-2 outline-none focus:border-white transition"
-                />
-              </div>
 
-              <div>
-                <label class="block mb-1"
-                  >Horas extras (finais de semana)</label
-                >
-                <input
-                  type="number"
-                  id="horas100"
-                  placeholder="Qtd de horas"
-                  class="w-full bg-transparent border-2 border-zinc-500 rounded-xl p-2 outline-none focus:border-white transition"
-                />
-              </div>
             </div>
 
             <div class="flex flex-col">
@@ -77,7 +57,7 @@
             </div>
           </div>
         </div>
-        <footer
+                <footer
           class="mt-12 pt-6 border-t border-zinc-700 flex items-center justify-center gap-2 text-zinc-300"
         >
           <div class="flex items-center gap-2">
